@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nmallar/spring-cloud-config-server-repository
+          default-label: main
+          username: nmallar
+          password: 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
+          clone-on-start: true
+      fail-fast: true
+
+log:
+  app-name: config-server

@@ -1,361 +1,189 @@
-2024-08-14 11:54:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
-2024-08-14 11:54:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-14 11:54:38 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
-	auto.include.jmx.reporter = true
-	bootstrap.controllers = []
-	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
-	client.dns.lookup = use_all_dns_ips
-	client.id = 
-	connections.max.idle.ms = 300000
-	default.api.timeout.ms = 60000
-	enable.metrics.push = true
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
+2024-08-16 13:38:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-16 13:38:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-08-16 13:38:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-16 13:38:11 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=cc1e9e7a-9f67-30ca-b192-bae91200eec4
+2024-08-16 13:38:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-16 13:38:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-16 13:38:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-16 13:38:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 13:38:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-16 13:38:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7708 ms
+2024-08-16 13:38:13 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'mockKafkaStreamRunner' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/twitter/to/kafka/service/runner/impl/MockKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaStatusListener' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/workspace/BOOT-INF/lib/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/demo/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+2024-08-16 13:38:13 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-16 13:38:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
-2024-08-14 11:54:38 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
-2024-08-14 11:54:38 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
-2024-08-14 11:54:38 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1723636478833
-2024-08-14 11:54:41 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080 (http)
-2024-08-14 11:54:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 8.048 seconds (process running for 11.213)
-2024-08-14 11:54:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2024-08-14 11:54:41 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
-2024-08-14 11:54:41 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
-2024-08-14 11:54:41 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
-2024-08-14 11:54:42 [main] INFO  c.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
-2024-08-14 11:54:42 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Strating mock flitering twitter streams for keywords [Java, Microservices, Kafka, Spring, Elasticsearch]
-2024-08-14 11:54:42 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text adipiscing elit nisi at consectetur semper Kafka venenatis semper semper Sed Sed sending to kafka topic twitter-topic
-2024-08-14 11:54:42 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3636370497300074995, "id": 843853159732981572, "text": "adipiscing elit nisi at consectetur semper Kafka venenatis semper semper Sed Sed", "createdAt": 1723636482000}' to topic='twitter-topic'
-2024-08-14 11:54:42 [pool-4-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 1638400
-	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.type = snappy
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	enable.metrics.push = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
-	linger.ms = 5
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 60000
-	retries = 5
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
-
-2024-08-14 11:54:42 [pool-4-thread-1] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
-2024-08-14 11:54:42 [pool-4-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
-	auto.register.schemas = true
-	avro.reflection.allow.null = false
-	avro.remove.java.properties = false
-	avro.use.logical.type.converters = false
-	basic.auth.credentials.source = URL
-	basic.auth.user.info = [hidden]
-	bearer.auth.cache.expiry.buffer.seconds = 300
-	bearer.auth.client.id = null
-	bearer.auth.client.secret = null
-	bearer.auth.credentials.source = STATIC_TOKEN
-	bearer.auth.identity.pool.id = null
-	bearer.auth.issuer.endpoint.url = null
-	bearer.auth.logical.cluster = null
-	bearer.auth.scope = null
-	bearer.auth.scope.claim.name = scope
-	bearer.auth.sub.claim.name = sub
-	bearer.auth.token = [hidden]
-	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
-	id.compatibility.strict = true
-	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
-	latest.cache.size = 1000
-	latest.cache.ttl.sec = -1
-	latest.compatibility.strict = true
-	max.schemas.per.subject = 1000
-	normalize.schemas = false
-	proxy.host = 
-	proxy.port = -1
-	rule.actions = []
-	rule.executors = []
-	schema.format = null
-	schema.reflection = false
-	schema.registry.basic.auth.user.info = [hidden]
-	schema.registry.ssl.cipher.suites = null
-	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	schema.registry.ssl.endpoint.identification.algorithm = https
-	schema.registry.ssl.engine.factory.class = null
-	schema.registry.ssl.key.password = null
-	schema.registry.ssl.keymanager.algorithm = SunX509
-	schema.registry.ssl.keystore.certificate.chain = null
-	schema.registry.ssl.keystore.key = null
-	schema.registry.ssl.keystore.location = null
-	schema.registry.ssl.keystore.password = null
-	schema.registry.ssl.keystore.type = JKS
-	schema.registry.ssl.protocol = TLSv1.3
-	schema.registry.ssl.provider = null
-	schema.registry.ssl.secure.random.implementation = null
-	schema.registry.ssl.trustmanager.algorithm = PKIX
-	schema.registry.ssl.truststore.certificates = null
-	schema.registry.ssl.truststore.location = null
-	schema.registry.ssl.truststore.password = null
-	schema.registry.ssl.truststore.type = JKS
-	schema.registry.url = [http://schema-registry:8081]
-	use.latest.version = false
-	use.latest.with.metadata = null
-	use.schema.id = -1
-	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
-
-2024-08-14 11:54:43 [pool-4-thread-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
-2024-08-14 11:54:43 [pool-4-thread-1] INFO  o.a.k.c.producer.ProducerConfig - These configurations '[schema.registry.url]' were supplied but are not used yet.
-2024-08-14 11:54:43 [pool-4-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
-2024-08-14 11:54:43 [pool-4-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
-2024-08-14 11:54:43 [pool-4-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1723636483590
-2024-08-14 11:54:43 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: nid-5EV7Rk2rZ1vbPGkywg
-2024-08-14 11:54:43 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
-2024-08-14 11:54:44 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 5; Timestamp 1723636483702, at time 167917670917430
-2024-08-14 11:54:54 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text semper elit laoreet Elasticsearch ipsum ipsum sending to kafka topic twitter-topic
-2024-08-14 11:54:54 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 9115914982013424875, "id": 569005299172104954, "text": "semper elit laoreet Elasticsearch ipsum ipsum", "createdAt": 1723636494000}' to topic='twitter-topic'
-2024-08-14 11:54:54 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 3; Timestamp 1723636494366, at time 167927553566005
-2024-08-14 11:55:04 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text at Sed quam sit Java ut sit sending to kafka topic twitter-topic
-2024-08-14 11:55:04 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3620531504581076770, "id": 89141057878158355, "text": "at Sed quam sit Java ut sit", "createdAt": 1723636504000}' to topic='twitter-topic'
-2024-08-14 11:55:04 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 4; Timestamp 1723636504368, at time 167937487615200
-2024-08-14 11:55:14 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text consectetur elit venenatis quam laoreet ipsum sit Kafka sit at Lorem laoreet amet sending to kafka topic twitter-topic
-2024-08-14 11:55:14 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7250910557122488744, "id": 7683836482472623864, "text": "consectetur elit venenatis quam laoreet ipsum sit Kafka sit at Lorem laoreet amet", "createdAt": 1723636514000}' to topic='twitter-topic'
-2024-08-14 11:55:14 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 5; Timestamp 1723636514371, at time 167947490984222
-2024-08-14 11:55:24 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ut semper ut consectetur fringilla Spring at at adipiscing sending to kafka topic twitter-topic
-2024-08-14 11:55:24 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3572052658547895131, "id": 8784297067203787448, "text": "ut semper ut consectetur fringilla Spring at at adipiscing", "createdAt": 1723636524000}' to topic='twitter-topic'
-2024-08-14 11:55:24 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 6; Timestamp 1723636524377, at time 167957498879544
-2024-08-14 11:55:34 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text dolor venenatis elit quam venenatis Sed ut Microservices fringilla amet laoreet sit consectetur nisi sending to kafka topic twitter-topic
-2024-08-14 11:55:34 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8288426531929718431, "id": 8557100451214326636, "text": "dolor venenatis elit quam venenatis Sed ut Microservices fringilla amet laoreet sit consectetur nisi", "createdAt": 1723636534000}' to topic='twitter-topic'
-2024-08-14 11:55:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 2; Timestamp 1723636534380, at time 167967559349051
-2024-08-14 11:55:44 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text fringilla sit ut Elasticsearch elit quam sending to kafka topic twitter-topic
-2024-08-14 11:55:44 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5247262575576768299, "id": 2121256929898558330, "text": "fringilla sit ut Elasticsearch elit quam", "createdAt": 1723636544000}' to topic='twitter-topic'
-2024-08-14 11:55:44 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 6; Timestamp 1723636544384, at time 167977500219800
-2024-08-14 11:55:54 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text elit elit at elit sit sit Elasticsearch sit laoreet consectetur elit sending to kafka topic twitter-topic
-2024-08-14 11:55:54 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1279714275156072787, "id": 467989918088701309, "text": "elit elit at elit sit sit Elasticsearch sit laoreet consectetur elit", "createdAt": 1723636554000}' to topic='twitter-topic'
-2024-08-14 11:55:54 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 7; Timestamp 1723636554391, at time 167987510061371
-2024-08-14 11:56:04 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text adipiscing nisi ut elit elit elit Sed nisi Spring ipsum nisi quam consectetur Sed ipsum dolor sending to kafka topic twitter-topic
-2024-08-14 11:56:04 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4058633451859479560, "id": 4283986512084323363, "text": "adipiscing nisi ut elit elit elit Sed nisi Spring ipsum nisi quam consectetur Sed ipsum dolor", "createdAt": 1723636564000}' to topic='twitter-topic'
-2024-08-14 11:56:04 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 8; Timestamp 1723636564394, at time 167997510114946
-2024-08-14 11:56:14 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text nisi adipiscing amet sit quam consectetur adipiscing laoreet Elasticsearch fringilla consectetur ut adipiscing adipiscing sit consectetur sending to kafka topic twitter-topic
-2024-08-14 11:56:14 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6118073915844234387, "id": 3362266132394380123, "text": "nisi adipiscing amet sit quam consectetur adipiscing laoreet Elasticsearch fringilla consectetur ut adipiscing adipiscing sit consectetur", "createdAt": 1723636574000}' to topic='twitter-topic'
-2024-08-14 11:56:14 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 3; Timestamp 1723636574396, at time 168007516451818
-2024-08-14 11:56:24 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text fringilla elit amet amet quam dolor Elasticsearch elit ut nisi ipsum sending to kafka topic twitter-topic
-2024-08-14 11:56:24 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4858027624953305356, "id": 4439617092814402070, "text": "fringilla elit amet amet quam dolor Elasticsearch elit ut nisi ipsum", "createdAt": 1723636584000}' to topic='twitter-topic'
-2024-08-14 11:56:24 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 9; Timestamp 1723636584398, at time 168017518396704
-2024-08-14 11:56:34 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Lorem Cras sit fringilla semper adipiscing adipiscing Java venenatis at at sit consectetur Sed sending to kafka topic twitter-topic
-2024-08-14 11:56:34 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 59454477500740612, "id": 2938617112752396767, "text": "Lorem Cras sit fringilla semper adipiscing adipiscing Java venenatis at at sit consectetur Sed", "createdAt": 1723636594000}' to topic='twitter-topic'
-2024-08-14 11:56:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 4; Timestamp 1723636594400, at time 168027519729950
-2024-08-14 11:56:44 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text laoreet ut elit consectetur elit venenatis Sed fringilla Elasticsearch dolor adipiscing sit laoreet Lorem nisi ipsum sending to kafka topic twitter-topic
-2024-08-14 11:56:44 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5501806917008277865, "id": 8872292202817853742, "text": "laoreet ut elit consectetur elit venenatis Sed fringilla Elasticsearch dolor adipiscing sit laoreet Lorem nisi ipsum", "createdAt": 1723636604000}' to topic='twitter-topic'
-2024-08-14 11:56:44 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 5; Timestamp 1723636604403, at time 168037521240069
-2024-08-14 11:56:54 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text laoreet fringilla amet amet ipsum ipsum ipsum fringilla Spring Lorem ipsum amet at venenatis sit sending to kafka topic twitter-topic
-2024-08-14 11:56:54 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4829320272418537752, "id": 6095274751539922440, "text": "laoreet fringilla amet amet ipsum ipsum ipsum fringilla Spring Lorem ipsum amet at venenatis sit", "createdAt": 1723636614000}' to topic='twitter-topic'
-2024-08-14 11:56:54 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 10; Timestamp 1723636614407, at time 168047526132977
-2024-08-14 11:57:04 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text venenatis nisi elit Sed consectetur Spring quam quam adipiscing Sed sending to kafka topic twitter-topic
-2024-08-14 11:57:04 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3265945888138155111, "id": 2170095886653063500, "text": "venenatis nisi elit Sed consectetur Spring quam quam adipiscing Sed", "createdAt": 1723636624000}' to topic='twitter-topic'
-2024-08-14 11:57:04 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 11; Timestamp 1723636624409, at time 168057531853960
-2024-08-14 11:57:14 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Cras laoreet ipsum quam Elasticsearch elit elit sending to kafka topic twitter-topic
-2024-08-14 11:57:14 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3910042611780156278, "id": 7663153578402875514, "text": "Cras laoreet ipsum quam Elasticsearch elit elit", "createdAt": 1723636634000}' to topic='twitter-topic'
-2024-08-14 11:57:14 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 12; Timestamp 1723636634412, at time 168067533244757
-2024-08-14 11:57:24 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text semper elit amet dolor elit adipiscing Lorem Microservices venenatis Lorem Lorem at amet sit sending to kafka topic twitter-topic
-2024-08-14 11:57:24 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1675139841752778090, "id": 8527627805090342065, "text": "semper elit amet dolor elit adipiscing Lorem Microservices venenatis Lorem Lorem at amet sit", "createdAt": 1723636644000}' to topic='twitter-topic'
-2024-08-14 11:57:24 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 13; Timestamp 1723636644413, at time 168077533404359
-2024-08-14 11:57:34 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ipsum semper ut elit elit elit Elasticsearch dolor at Cras Cras sending to kafka topic twitter-topic
-2024-08-14 11:57:34 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7212493502050432479, "id": 304108106039958431, "text": "ipsum semper ut elit elit elit Elasticsearch dolor at Cras Cras", "createdAt": 1723636654000}' to topic='twitter-topic'
-2024-08-14 11:57:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 7; Timestamp 1723636654416, at time 168087535844115
-2024-08-14 11:57:44 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text adipiscing laoreet venenatis nisi Kafka ut consectetur ut sending to kafka topic twitter-topic
-2024-08-14 11:57:44 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 9062863606380109161, "id": 367304403602043036, "text": "adipiscing laoreet venenatis nisi Kafka ut consectetur ut", "createdAt": 1723636664000}' to topic='twitter-topic'
-2024-08-14 11:57:44 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 14; Timestamp 1723636664420, at time 168097539191068
-2024-08-14 11:57:54 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text consectetur elit adipiscing ipsum Sed Sed semper Sed Microservices Sed consectetur venenatis elit amet elit nisi sending to kafka topic twitter-topic
-2024-08-14 11:57:54 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8001329530682192916, "id": 1118838528716584431, "text": "consectetur elit adipiscing ipsum Sed Sed semper Sed Microservices Sed consectetur venenatis elit amet elit nisi", "createdAt": 1723636674000}' to topic='twitter-topic'
-2024-08-14 11:57:54 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 6; Timestamp 1723636674422, at time 168107547090295
-2024-08-14 11:58:04 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Sed dolor sit amet Cras Java consectetur fringilla elit Cras sending to kafka topic twitter-topic
-2024-08-14 11:58:04 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 372927155550454202, "id": 8428417531922000963, "text": "Sed dolor sit amet Cras Java consectetur fringilla elit Cras", "createdAt": 1723636684000}' to topic='twitter-topic'
-2024-08-14 11:58:04 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 7; Timestamp 1723636684425, at time 168117548356229
-2024-08-14 11:58:14 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text consectetur semper laoreet Java venenatis sit sending to kafka topic twitter-topic
-2024-08-14 11:58:14 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2708392402617821061, "id": 2969531819532734024, "text": "consectetur semper laoreet Java venenatis sit", "createdAt": 1723636694000}' to topic='twitter-topic'
-2024-08-14 11:58:14 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 8; Timestamp 1723636694428, at time 168127552349039
-2024-08-14 11:58:24 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text adipiscing Sed Sed sit quam elit consectetur Kafka quam consectetur ut quam dolor Cras sending to kafka topic twitter-topic
-2024-08-14 11:58:24 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7856938933917117924, "id": 7982775956234001916, "text": "adipiscing Sed Sed sit quam elit consectetur Kafka quam consectetur ut quam dolor Cras", "createdAt": 1723636704000}' to topic='twitter-topic'
-2024-08-14 11:58:24 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 9; Timestamp 1723636704430, at time 168137553592755
-2024-08-14 11:58:34 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text sit amet quam amet semper quam elit Lorem Spring elit venenatis elit nisi semper laoreet ipsum sending to kafka topic twitter-topic
-2024-08-14 11:58:34 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 108447892351679302, "id": 6450629183888074195, "text": "sit amet quam amet semper quam elit Lorem Spring elit venenatis elit nisi semper laoreet ipsum", "createdAt": 1723636714000}' to topic='twitter-topic'
-2024-08-14 11:58:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 8; Timestamp 1723636714432, at time 168147552500250
-2024-08-14 11:58:44 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Sed quam sit fringilla Lorem ut consectetur Microservices sit Sed ipsum ut Sed sending to kafka topic twitter-topic
-2024-08-14 11:58:44 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 664892746639966814, "id": 2915215938934398674, "text": "Sed quam sit fringilla Lorem ut consectetur Microservices sit Sed ipsum ut Sed", "createdAt": 1723636724000}' to topic='twitter-topic'
-2024-08-14 11:58:44 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 9; Timestamp 1723636724436, at time 168157556836936
-2024-08-14 11:58:54 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text adipiscing dolor Lorem fringilla adipiscing sit quam Kafka nisi ipsum Sed ut sit sending to kafka topic twitter-topic
-2024-08-14 11:58:54 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 8384800063356405018, "id": 1427792275077828008, "text": "adipiscing dolor Lorem fringilla adipiscing sit quam Kafka nisi ipsum Sed ut sit", "createdAt": 1723636734000}' to topic='twitter-topic'
-2024-08-14 11:58:54 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 10; Timestamp 1723636734437, at time 168167560543232
-2024-08-14 11:59:04 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text laoreet adipiscing nisi adipiscing fringilla elit Microservices ut fringilla fringilla quam sending to kafka topic twitter-topic
-2024-08-14 11:59:04 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5024435347436900048, "id": 7322581328314463590, "text": "laoreet adipiscing nisi adipiscing fringilla elit Microservices ut fringilla fringilla quam", "createdAt": 1723636744000}' to topic='twitter-topic'
-2024-08-14 11:59:04 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 11; Timestamp 1723636744440, at time 168177566755119
-2024-08-14 11:59:14 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text fringilla sit consectetur amet sit quam dolor Elasticsearch consectetur sit ipsum laoreet Sed consectetur sending to kafka topic twitter-topic
-2024-08-14 11:59:14 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5865222569113997137, "id": 7409759236330775583, "text": "fringilla sit consectetur amet sit quam dolor Elasticsearch consectetur sit ipsum laoreet Sed consectetur", "createdAt": 1723636754000}' to topic='twitter-topic'
-2024-08-14 11:59:14 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 1; Offset 15; Timestamp 1723636754443, at time 168187565922542
-2024-08-14 11:59:24 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Lorem fringilla Sed laoreet sit Microservices ut fringilla venenatis sending to kafka topic twitter-topic
-2024-08-14 11:59:24 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2322574539138392772, "id": 5228299551287971801, "text": "Lorem fringilla Sed laoreet sit Microservices ut fringilla venenatis", "createdAt": 1723636764000}' to topic='twitter-topic'
-2024-08-14 11:59:24 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 12; Timestamp 1723636764444, at time 168197569682640
-2024-08-14 11:59:34 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text adipiscing sit sit Spring at adipiscing sending to kafka topic twitter-topic
-2024-08-14 11:59:34 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7288349528481571933, "id": 8296167515221139927, "text": "adipiscing sit sit Spring at adipiscing", "createdAt": 1723636774000}' to topic='twitter-topic'
-2024-08-14 11:59:34 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 13; Timestamp 1723636774447, at time 168207571250916
-2024-08-14 11:59:40 [kafka-admin-client-thread | adminclient-1] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
-2024-08-14 11:59:44 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text venenatis nisi nisi nisi amet adipiscing sit adipiscing Kafka quam nisi Cras ipsum quam elit nisi sending to kafka topic twitter-topic
-2024-08-14 11:59:44 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7090524645801441110, "id": 9109212889133059057, "text": "venenatis nisi nisi nisi amet adipiscing sit adipiscing Kafka quam nisi Cras ipsum quam elit nisi", "createdAt": 1723636784000}' to topic='twitter-topic'
-2024-08-14 11:59:44 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 10; Timestamp 1723636784451, at time 168217580756594
-2024-08-14 11:59:54 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Cras dolor elit elit nisi consectetur elit sit Java Sed elit ipsum venenatis fringilla amet quam sending to kafka topic twitter-topic
-2024-08-14 11:59:54 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 6552736000303296515, "id": 4066838341308405724, "text": "Cras dolor elit elit nisi consectetur elit sit Java Sed elit ipsum venenatis fringilla amet quam", "createdAt": 1723636794000}' to topic='twitter-topic'
-2024-08-14 11:59:54 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 11; Timestamp 1723636794453, at time 168227580207172
-2024-08-14 12:00:04 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text amet at adipiscing elit elit Elasticsearch dolor nisi Sed sending to kafka topic twitter-topic
-2024-08-14 12:00:04 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5076989614042089126, "id": 6466823708183187106, "text": "amet at adipiscing elit elit Elasticsearch dolor nisi Sed", "createdAt": 1723636804000}' to topic='twitter-topic'
-2024-08-14 12:00:04 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 14; Timestamp 1723636804456, at time 168237582834030
-2024-08-14 12:00:14 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ipsum fringilla sit adipiscing semper laoreet Java elit elit quam fringilla dolor sending to kafka topic twitter-topic
-2024-08-14 12:00:14 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 7742996050376754534, "id": 8636395086422924206, "text": "ipsum fringilla sit adipiscing semper laoreet Java elit elit quam fringilla dolor", "createdAt": 1723636814000}' to topic='twitter-topic'
-2024-08-14 12:00:14 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 2; Offset 12; Timestamp 1723636814459, at time 168247587886650
-2024-08-14 12:00:24 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text sit amet quam ipsum semper adipiscing sit ut Java consectetur elit dolor dolor sit quam fringilla sending to kafka topic twitter-topic
-2024-08-14 12:00:24 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2972008129921621694, "id": 1394595947430912935, "text": "sit amet quam ipsum semper adipiscing sit ut Java consectetur elit dolor dolor sit quam fringilla", "createdAt": 1723636824000}' to topic='twitter-topic'
-2024-08-14 12:00:24 [kafka-producer-network-thread | producer-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Received new metadata. Topic: twitter-topic; Partition 0; Offset 15; Timestamp 1723636824460, at time 168257587889986
-2024-08-14 12:00:29 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2024-08-14 12:00:29 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2024-08-14 12:00:29 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2024-08-14 12:00:29 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2024-08-14 12:00:29 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2024-08-14 12:00:29 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
-2024-08-14 12:00:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
-2024-08-14 12:00:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2024-08-14 12:00:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2024-08-14 12:00:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-16 13:38:13 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'mockKafkaStreamRunner' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/twitter/to/kafka/service/runner/impl/MockKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaStatusListener' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/workspace/BOOT-INF/lib/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/demo/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mockKafkaStreamRunner' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/twitter/to/kafka/service/runner/impl/MockKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaStatusListener' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/workspace/BOOT-INF/lib/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/demo/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaStatusListener' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/workspace/BOOT-INF/lib/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/demo/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 40 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaProducer' defined in URL [jar:file:/workspace/BOOT-INF/lib/kafka-producer-0.0.1-SNAPSHOT.jar!/com/microservices/demo/kafka/producer/config/service/impl/TwitterKafkaProducer.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kafkaTemplate' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 68 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.kafka.core.KafkaTemplate]: Factory method 'kafkaTemplate' threw exception with message: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 82 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'producerFactory' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:380)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:351)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.producerFactory(<generated>)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig.kafkaTemplate(KafkaProducerConfig.java:53)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.CGLIB$kafkaTemplate$0(<generated>)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.kafkaTemplate(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 83 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.kafka.core.ProducerFactory]: Factory method 'producerFactory' threw exception with message: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 106 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'producerConfig' defined in class path resource [com/microservices/demo/kafka/producer/config/KafkaProducerConfig.class]: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:380)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:351)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.producerConfig(<generated>)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig.producerFactory(KafkaProducerConfig.java:48)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.CGLIB$producerFactory$1(<generated>)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.producerFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 107 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.util.Map]: Factory method 'producerConfig' threw exception with message: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 130 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.microservices.demo.config.KafkaProducerConfigData.getBatchSize()" is null
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig.producerConfig(KafkaProducerConfig.java:36)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.CGLIB$producerConfig$2(<generated>)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348)
+	at com.microservices.demo.kafka.producer.config.KafkaProducerConfig$$SpringCGLIB$$0.producerConfig(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 131 common frames omitted

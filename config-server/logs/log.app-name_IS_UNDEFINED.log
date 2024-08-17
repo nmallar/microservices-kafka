@@ -1,0 +1,51 @@
+2024-08-17 18:53:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 18:53:05 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 8284 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-17 18:53:05 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 18:53:06 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ced77bf4-1d38-3262-bc4a-1393cb95cee0
+2024-08-17 18:53:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 18:53:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 18:53:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 18:53:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 18:53:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 18:53:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1138 ms
+2024-08-17 18:53:08 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-17 18:53:08 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-17 18:53:08 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-17 18:53:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-17 18:53:08 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-17 18:54:48 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 18:54:48 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 2272 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-17 18:54:48 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 18:54:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ced77bf4-1d38-3262-bc4a-1393cb95cee0
+2024-08-17 18:54:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 18:54:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 18:54:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 18:54:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 18:54:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 18:54:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 896 ms
+2024-08-17 18:54:50 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-17 18:54:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 18:54:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 18:54:54 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-17 18:54:54 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 7.221 seconds (process running for 7.851)
+2024-08-17 19:02:19 [http-nio-8888-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-17 19:02:19 [http-nio-8888-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-17 19:02:19 [http-nio-8888-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-17 19:02:20 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\mnonv\AppData\Local\Temp\config-repo-8661823213971273661\config-client.yml]' via location 'file:/C:/Users/mnonv/AppData/Local/Temp/config-repo-8661823213971273661/'
+2024-08-17 19:02:21 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\mnonv\AppData\Local\Temp\config-repo-8661823213971273661\config-client-twitter_to_kafka.yml]' via location 'file:/C:/Users/mnonv/AppData/Local/Temp/config-repo-8661823213971273661/'
+2024-08-17 19:02:21 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\mnonv\AppData\Local\Temp\config-repo-8661823213971273661\config-client.yml]' via location 'file:/C:/Users/mnonv/AppData/Local/Temp/config-repo-8661823213971273661/'

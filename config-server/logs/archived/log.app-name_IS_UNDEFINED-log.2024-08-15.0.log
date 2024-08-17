@@ -1,0 +1,415 @@
+2024-08-15 00:23:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 00:23:26 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 18812 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 00:23:26 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 00:23:28 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 00:23:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-15 00:23:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-15 00:23:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 00:23:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 00:23:28 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 00:23:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1753 ms
+2024-08-15 00:23:30 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 00:23:30 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-15 00:23:30 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 00:23:30 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 00:23:30 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-15 00:25:47 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 00:25:47 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 17588 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 00:25:47 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 00:25:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 00:25:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-15 00:25:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-15 00:25:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 00:25:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 00:25:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 00:25:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1825 ms
+2024-08-15 00:25:50 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 00:25:50 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-15 00:25:50 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 00:25:50 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 00:25:50 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-15 00:35:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 00:35:53 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 19640 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 00:35:53 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 00:35:54 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 00:35:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-15 00:35:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-15 00:35:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 00:35:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 00:35:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 00:35:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1455 ms
+2024-08-15 00:35:56 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 00:35:56 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-15 00:35:56 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 00:35:56 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 00:35:56 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-15 00:41:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 00:41:05 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 16080 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 00:41:05 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 00:41:06 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 00:41:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-15 00:41:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-15 00:41:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 00:41:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 00:41:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 00:41:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1553 ms
+2024-08-15 00:41:08 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 00:41:08 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-15 00:41:08 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 00:41:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 00:41:08 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-15 01:07:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 01:07:26 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 12248 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 01:07:26 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 01:07:28 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 01:07:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-15 01:07:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-08-15 01:07:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 01:07:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 01:07:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 01:07:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3723 ms
+2024-08-15 01:07:32 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 01:07:33 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-15 01:07:33 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 01:07:33 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 01:07:33 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-15 01:12:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 01:12:44 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 28028 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 01:12:44 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 01:12:46 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 01:12:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-15 01:12:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-15 01:12:46 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 01:12:46 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 01:12:46 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 01:12:46 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1593 ms
+2024-08-15 01:12:48 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 01:12:48 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-15 01:12:48 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 01:12:48 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 01:12:48 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-15 01:13:18 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 01:13:18 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 6880 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 01:13:18 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 01:13:19 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 01:13:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-15 01:13:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-15 01:13:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 01:13:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 01:13:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 01:13:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1273 ms
+2024-08-15 01:13:21 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 01:13:22 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-15 01:13:22 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 01:13:22 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 01:13:22 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-15 01:17:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 01:17:07 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 8084 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 01:17:07 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 01:17:08 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 01:17:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-15 01:17:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-15 01:17:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 01:17:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 01:17:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 01:17:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1558 ms
+2024-08-15 01:17:10 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 01:17:10 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-15 01:17:10 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 01:17:10 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 01:17:10 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-15 01:19:17 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 01:19:17 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 28324 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 01:19:17 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 01:19:18 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 01:19:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-15 01:19:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-15 01:19:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 01:19:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 01:19:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 01:19:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1353 ms
+2024-08-15 01:19:20 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 01:19:20 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2024-08-15 01:19:20 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 01:19:20 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 01:19:20 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
+2024-08-15 01:21:17 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 01:21:17 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 2460 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 01:21:17 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 01:21:18 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 01:21:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-15 01:21:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-15 01:21:19 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 01:21:19 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 01:21:19 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 01:21:19 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1347 ms
+2024-08-15 01:21:20 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 01:21:28 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'compositeCompatibilityVerifier' defined in class path resource [org/springframework/cloud/configuration/CompatibilityVerifierAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.configuration.CompositeCompatibilityVerifier]: Factory method 'compositeCompatibilityVerifier' threw exception with message: Spring Cloud/ Spring Boot version compatibility checks have failed: [[VerificationResult@ca2cd5e description = 'Spring Boot [3.3.2] is not compatible with this Spring Cloud release train', action = 'Change Spring Boot version to one of the following versions [3.0.x, 3.1.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]']]
+2024-08-15 01:21:28 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 01:21:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 01:21:28 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Your project setup is incompatible with our requirements due to following reasons:
+
+- Spring Boot [3.3.2] is not compatible with this Spring Cloud release train
+
+
+Action:
+
+Consider applying the following actions:
+
+- Change Spring Boot version to one of the following versions [3.0.x, 3.1.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]
+
+
+2024-08-15 01:43:22 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 01:43:22 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 31472 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 01:43:22 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 01:43:23 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d8a020e9-30fc-36a6-9283-b76873c2ca56
+2024-08-15 01:43:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-15 01:43:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-15 01:43:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 01:43:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 01:43:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 01:43:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1353 ms
+2024-08-15 01:43:25 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 01:43:29 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'compositeCompatibilityVerifier' defined in class path resource [org/springframework/cloud/configuration/CompatibilityVerifierAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.configuration.CompositeCompatibilityVerifier]: Factory method 'compositeCompatibilityVerifier' threw exception with message: Spring Cloud/ Spring Boot version compatibility checks have failed: [[VerificationResult@69069866 description = 'Spring Boot [3.3.2] is not compatible with this Spring Cloud release train', action = 'Change Spring Boot version to one of the following versions [3.0.x, 3.1.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]']]
+2024-08-15 01:43:29 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 01:43:29 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 01:43:29 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Your project setup is incompatible with our requirements due to following reasons:
+
+- Spring Boot [3.3.2] is not compatible with this Spring Cloud release train
+
+
+Action:
+
+Consider applying the following actions:
+
+- Change Spring Boot version to one of the following versions [3.0.x, 3.1.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]
+
+
+2024-08-15 02:00:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 02:00:55 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 25016 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 02:00:55 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 02:00:57 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=efe7de46-efcb-3578-8394-39330c197a9a
+2024-08-15 02:00:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-15 02:00:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-15 02:00:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 02:00:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 02:00:57 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 02:00:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2056 ms
+2024-08-15 02:01:00 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 02:01:05 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'compositeCompatibilityVerifier' defined in class path resource [org/springframework/cloud/configuration/CompatibilityVerifierAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.configuration.CompositeCompatibilityVerifier]: Factory method 'compositeCompatibilityVerifier' threw exception with message: Spring Cloud/ Spring Boot version compatibility checks have failed: [[VerificationResult@2c08c787 description = 'Spring Boot [3.3.2] is not compatible with this Spring Cloud release train', action = 'Change Spring Boot version to one of the following versions [3.0.x, 3.1.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]']]
+2024-08-15 02:01:05 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-15 02:01:05 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-15 02:01:05 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Your project setup is incompatible with our requirements due to following reasons:
+
+- Spring Boot [3.3.2] is not compatible with this Spring Cloud release train
+
+
+Action:
+
+Consider applying the following actions:
+
+- Change Spring Boot version to one of the following versions [3.0.x, 3.1.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]
+
+
+2024-08-15 02:10:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-15 02:10:07 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 10916 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-15 02:10:07 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 02:10:08 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ced77bf4-1d38-3262-bc4a-1393cb95cee0
+2024-08-15 02:10:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-15 02:10:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-15 02:10:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-15 02:10:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15 02:10:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-15 02:10:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1584 ms
+2024-08-15 02:10:10 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 02:10:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-15 02:10:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-15 02:10:16 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-15 02:10:16 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 11.291 seconds (process running for 12.561)
+2024-08-15 02:10:39 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-15 02:10:39 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-15 02:10:39 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-08-15 02:10:59 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\mnonv\AppData\Local\Temp\config-repo-17024715276048678962\.git\objects\pack\pack-46ae12818ccc86b2a05cec06365afa515d6d5630.idx
