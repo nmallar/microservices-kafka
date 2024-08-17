@@ -16,7 +16,7 @@ spring:
           uri: https://github.com/nmallar/spring-cloud-config-server-repository
           default-label: main
           username: nmallar
-          password: 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
+          password: ENC(4u17QMSYFWV3rcVCpfJGolWsLkqPufdH7fN9U+DoywufQI856obCmEJOAu/of0INv/F0tRSq3IisJn0F19/BsD+P8nCOVwIqwv1fOLyTqrk=)
           clone-on-start: true
       fail-fast: true
 
@@ -26,4 +26,8 @@ log:
 security:
   user:
     name: spring_cloud_user
-    password: pass1234
+    password: ENC(6IuR1fpTSJ2KgrSueZ+ZjM4jY6/Tk2+1Fed14LRKObXPhVTbSFQCkuQ+Zki/1UdH)
+
+jasypt:
+  encryptor:
+    password: ${jasypt_encrypt_password}
