@@ -19,7 +19,7 @@
         <module>kafka</module>
 		<module>common-config</module>
         <module>config-server</module>
-		<module>playground</module>
+<!--		<module>playground</module>-->
 
 	</modules>
 	<packaging>pom</packaging>
