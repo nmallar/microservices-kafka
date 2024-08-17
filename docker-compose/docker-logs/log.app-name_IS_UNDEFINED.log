@@ -27,3 +27,125 @@
 2024-08-17 18:24:28 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-08-17 18:24:28 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-08-17 18:24:28 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2024-08-17 18:27:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 18:27:56 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-08-17 18:27:56 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 18:28:00 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=418d0d08-3a83-3c52-978e-30374b2eda33
+2024-08-17 18:28:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 18:28:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 18:28:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 18:28:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 18:28:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 18:28:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5256 ms
+2024-08-17 18:28:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 18:28:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 18:28:11 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 16.811 seconds (process running for 18.013)
+2024-08-17 18:28:13 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-17 18:28:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-17 18:28:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-17 18:54:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 18:54:15 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-08-17 18:54:15 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 18:54:19 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=418d0d08-3a83-3c52-978e-30374b2eda33
+2024-08-17 18:54:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 18:54:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 18:54:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 18:54:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 18:54:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 18:54:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4649 ms
+2024-08-17 18:54:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 18:54:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 18:54:31 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 16.989 seconds (process running for 18.08)
+2024-08-17 18:58:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 18:58:50 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-08-17 18:58:50 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 18:58:55 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=418d0d08-3a83-3c52-978e-30374b2eda33
+2024-08-17 18:58:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 18:58:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 18:58:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 18:58:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 18:58:57 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 18:58:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7181 ms
+2024-08-17 18:59:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 18:59:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 18:59:09 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 21.049 seconds (process running for 22.123)
+2024-08-17 19:02:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 19:02:26 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-08-17 19:02:26 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 19:02:29 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=418d0d08-3a83-3c52-978e-30374b2eda33
+2024-08-17 19:02:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 19:02:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:02:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 19:02:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 19:02:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 19:02:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4199 ms
+2024-08-17 19:02:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:02:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 19:02:41 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 16.835 seconds (process running for 17.74)
+2024-08-17 19:02:43 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-17 19:02:43 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-17 19:02:43 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-08-17 19:06:10 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 19:06:10 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-08-17 19:06:10 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 19:06:16 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=418d0d08-3a83-3c52-978e-30374b2eda33
+2024-08-17 19:06:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 19:06:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:06:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 19:06:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 19:06:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 19:06:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7072 ms
+2024-08-17 19:06:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:06:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 19:06:30 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 21.007 seconds (process running for 21.875)
+2024-08-17 19:06:32 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-17 19:06:32 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-17 19:06:32 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-08-17 19:15:37 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 19:15:38 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-08-17 19:15:38 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 19:15:41 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=418d0d08-3a83-3c52-978e-30374b2eda33
+2024-08-17 19:15:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 19:15:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:15:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 19:15:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 19:15:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 19:15:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4808 ms
+2024-08-17 19:15:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:15:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 19:15:56 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 19.257 seconds (process running for 20.091)
+2024-08-17 19:15:57 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-17 19:15:57 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-17 19:15:57 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-17 19:19:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 19:19:03 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-08-17 19:19:03 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 19:19:11 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=418d0d08-3a83-3c52-978e-30374b2eda33
+2024-08-17 19:19:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 19:19:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:19:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 19:19:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 19:19:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 19:19:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9062 ms
+2024-08-17 19:19:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:19:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 19:19:22 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 20.707 seconds (process running for 21.547)
+2024-08-17 19:19:23 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-17 19:19:23 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-17 19:19:23 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-17 19:21:18 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 19:21:18 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-08-17 19:21:18 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 19:21:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=418d0d08-3a83-3c52-978e-30374b2eda33
+2024-08-17 19:21:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 19:21:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:21:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 19:21:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 19:21:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 19:21:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7749 ms
+2024-08-17 19:21:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 19:21:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 19:21:35 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 19.091 seconds (process running for 20.443)
+2024-08-17 19:21:36 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-17 19:21:36 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-17 19:21:36 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
