@@ -807,3 +807,22 @@ Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/nmalla
 2024-08-17 22:46:56 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\mnonv\AppData\Local\Temp\config-repo-18402454391449824574\config-client-twitter_to_kafka.yml]' via location 'file:/C:/Users/mnonv/AppData/Local/Temp/config-repo-18402454391449824574/'
 2024-08-17 22:46:56 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\mnonv\AppData\Local\Temp\config-repo-18402454391449824574\config-client.yml]' via location 'file:/C:/Users/mnonv/AppData/Local/Temp/config-repo-18402454391449824574/'
 2024-08-17 22:47:57 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\mnonv\AppData\Local\Temp\config-repo-18402454391449824574\.git\objects\pack\pack-49341b17370b30eefa01b1cb36759fe5a03c68d5.idx
+2024-08-17 23:22:37 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-17 23:22:37 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.8 with PID 26688 (C:\practice\microservices-demo\config-server\target\classes started by mnonv in C:\practice\microservices-demo)
+2024-08-17 23:22:37 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-08-17 23:22:38 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ced77bf4-1d38-3262-bc4a-1393cb95cee0
+2024-08-17 23:22:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-08-17 23:22:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-08-17 23:22:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-17 23:22:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-17 23:22:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-17 23:22:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1150 ms
+2024-08-17 23:22:40 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-17 23:22:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-08-17 23:22:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-08-17 23:22:43 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-08-17 23:22:43 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 7.781 seconds (process running for 8.826)
+2024-08-17 23:22:59 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-17 23:22:59 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-17 23:22:59 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-17 23:24:15 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\mnonv\AppData\Local\Temp\config-repo-2679130968298085319\.git\objects\pack\pack-49341b17370b30eefa01b1cb36759fe5a03c68d5.idx
