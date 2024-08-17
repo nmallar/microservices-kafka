@@ -22,3 +22,8 @@ spring:
 
 log:
   app-name: config-server
+
+security:
+  user:
+    name: spring_cloud_user
+    password: pass1234
