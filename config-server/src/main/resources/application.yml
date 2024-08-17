@@ -16,9 +16,12 @@ spring:
           uri: https://github.com/nmallar/spring-cloud-config-server-repository
           default-label: main
           username: nmallar
-          password: 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
+          password: ${GIT_PASS}
           clone-on-start: true
       fail-fast: true
-
+security:
+  user:
+    name: spring_cloud_user
+    password: ${SPRING_CLOUD_PASS}
 log:
   app-name: config-server
