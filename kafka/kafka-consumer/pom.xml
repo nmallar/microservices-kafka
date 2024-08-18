@@ -5,24 +5,31 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.microservices.demo</groupId>
-        <artifactId>microservices-demo</artifactId>
+        <artifactId>kafka</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>kafka</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>kafka-admin</module>
-        <module>kafka-model</module>
-        <module>kafka-producer</module>
-        <module>kafka-consumer</module>
-
-    </modules>
+    <artifactId>kafka-consumer</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>app-config-data</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
